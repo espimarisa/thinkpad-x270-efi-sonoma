@@ -420,6 +420,8 @@
 				<string>Internal@0,31,6</string>
 				<key>device_type</key>
 				<string>Ethernet controller</string>
+				<key>built-in</key>
+				<data>AQ==</data>
 				<key>model</key>
 				<string>Ethernet Connection (4) I219-V</string>
 			</dict>
