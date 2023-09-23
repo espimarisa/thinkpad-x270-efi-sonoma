@@ -3,7 +3,7 @@
 This is my OpenCore EFI configured to run **macOS Sonoma** on my Lenovo ThinkPad X270.
 
 <p align="center">
-  <img src="https://github.com/espimarisa/hibiki/assets/49253425/7564acfc-a8db-483e-8712-55f2fb00548f">
+  <img src="https://github.com/espimarisa/thinkpad-x270-efi-sonoma/assets/49253425/c8924f74-b111-4314-b6cf-6dc54815db4d">
 </p>
 
 <details>
@@ -85,7 +85,6 @@ I recommend doing the following to get your system as smooth as possible:
 3. If you're running a 1080p internal display, check out [BetterDisplay][betterdisplay] and run 1280x720@2x for HiDPI support
 4. Use [Boom 2][boom2] to boost the speaker output as by default it's quite quiet. Note that this is not a free application!
 
-[screenshot]: https://github.com/espimarisa/hibiki/assets/49253425/7564acfc-a8db-483e-8712-55f2fb00548f "A screenshot showing my neofetch"
 [gensmbios]: https://github.com/corpnewt/GenSMBIOS "A link to GenSMBIOS"
 [drm-note]: https://dortania.github.io/OpenCore-Post-Install/universal/drm.html#fixing-drm-support-and-igpu-performance "A link to the OpenCore Post-Install guide note on Safari DRM"
 [wwan-driver]: https://github.com/KirisameR/Sierra-Wireless-EM74xx-Series-WWAN-Card-Driver-for-macOS-Catalina "A link to the Sierra Wireless kext"
