@@ -48,14 +48,15 @@ In order to get iServices and other functionality working, you must fill in your
 - [x] Power management
 - [x] Graphics acceleration
 - [x] Boot chime and GUI picker
-- [x] Intel Ethernet and WiFi/Bluetooth
 - [x] Audio, speakers, and headphone jack
+- [x] Ethernet and WiFi/Bluetooth (w/ Heliport)
 - [x] TrackPad and TrackPoint with full gestures
 - [x] Realtek SD Card Reader (not heavily tested)
 - [x] USB ports, USB mapping, and dock USB ports
 
 ### ❌ Not working
 
+- [ ] Native WiFi control / AirportItlwm
 - [ ] [Safari DRM][drm-note] (use Chrome for DRM playback)
 - [ ] Fingerprint reader (no driver actually exists)
 - [ ] WWAN ([driver exists][wwan-driver] but is not working)
@@ -71,8 +72,9 @@ In order to get iServices and other functionality working, you must fill in your
 
 I recommend doing the following to get your system as smooth as possible:
 
-1. Enable Tap to Click in System Settings -> Trackpad 🙄
-2. Disable hibernation, powernap, and some other power settings
+1. Install [HeliPort][heliport] for WiFi control until AirportItlwm works with Sonoma
+2. Enable Tap to Click in System Settings -> Trackpad 🙄
+3. Disable hibernation, powernap, and some other power settings
 
    ```sh
     sudo pmset autopoweroff 0
@@ -82,11 +84,12 @@ I recommend doing the following to get your system as smooth as possible:
     sudo pmset tcpkeepalive 0
    ```
 
-3. If you're running a 1080p internal display, check out [BetterDisplay][betterdisplay] and run 1280x720@2x for HiDPI support
-4. Use [Boom 2][boom2] to boost the speaker output as by default it's quite quiet. Note that this is not a free application!
+4. If you're running a 1080p internal display, check out [BetterDisplay][betterdisplay] and run 1280x720@2x for HiDPI support
+5. Use [Boom 2][boom2] to boost the speaker output as by default it's quite quiet. Note that this is not a free application!
 
 [gensmbios]: https://github.com/corpnewt/GenSMBIOS "A link to GenSMBIOS"
 [drm-note]: https://dortania.github.io/OpenCore-Post-Install/universal/drm.html#fixing-drm-support-and-igpu-performance "A link to the OpenCore Post-Install guide note on Safari DRM"
 [wwan-driver]: https://github.com/KirisameR/Sierra-Wireless-EM74xx-Series-WWAN-Card-Driver-for-macOS-Catalina "A link to the Sierra Wireless kext"
+[heliport]: https://github.com/OpenIntelWireless/HeliPort "A link to Heliport"
 [betterdisplay]: https://github.com/waydabber/BetterDisplay "A link to BetterDisplay"
 [boom2]: https://www.globaldelight.com/boom2/ "A link to boom2"
